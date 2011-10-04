@@ -1,5 +1,20 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Name:</b>
+  <%= @ledger_entry.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @ledger_entry.description %>
+</p>
+
+<p>
+  <b>Due:</b>
+  <%= @ledger_entry.due %>
+</p>
+
 
 <%= link_to 'Edit', edit_ledger_entry_path(@ledger_entry) %> |
 <%= link_to 'Back', ledger_entries_path %>

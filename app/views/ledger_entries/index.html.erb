@@ -2,6 +2,9 @@
 
 <table>
   <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Due</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +12,9 @@
 
 <% @ledger_entries.each do |ledger_entry| %>
   <tr>
+    <td><%= ledger_entry.name %></td>
+    <td><%= ledger_entry.description %></td>
+    <td><%= ledger_entry.due %></td>
     <td><%= link_to 'Show', ledger_entry %></td>
     <td><%= link_to 'Edit', edit_ledger_entry_path(ledger_entry) %></td>
     <td><%= link_to 'Destroy', ledger_entry, :confirm => 'Are you sure?', :method => :delete %></td>
