@@ -42,6 +42,8 @@ GEM
     bson (1.4.0-java)
     builder (3.0.0)
     erubis (2.7.0)
+    factory_girl (2.1.2)
+      activesupport
     hike (1.2.1)
     i18n (0.6.0)
     jdbc-sqlite3 (3.7.2)
@@ -108,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
+  factory_girl
   jquery-rails
   jruby-openssl
   json

@@ -20,6 +20,10 @@ gem 'json'
 
 gem 'jquery-rails'
 
+group :development, :test do
+  gem 'factory_girl'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
